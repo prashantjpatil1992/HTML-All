@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Positions</title>
+    <style>
+        body{
+            height: 200vh;
+            background-color: blanchedalmond;
+        }
+       .sticky{
+        background-color: aqua;
+        height: 70px;
+        position: sticky;
+        top: 0;
+       }
+
+       .static{
+        background-color: red;
+        height: 70px;
+        position: static;
+        top:20px;left: 30px;
+        width: 500px;
+    
+       }
+
+       .fix{
+        background-color: green;
+        height: 70px;
+        position: fixed;
+        top:400px;left: 800px;
+        width: 500px;
+       }
+
+       .relative{
+        background-color: green;
+        height: 70px;
+        position: relative;
+        top:400px;right: 300px;
+        width: 500px;
+       }
+
+       .abso{
+        background-color: blue  ;
+        height: 70px;
+        position: absolute;
+        top:0px;right: 200px;
+        width: 500px;
+       }
+    </style>
+</head>
+<body>
+    <div class="sticky">
+        <h1>Sticky</h1>
+    </div>
+    <div class="static">
+        <h1>static</h1>
+    </div>
+    <div class="fix">
+       <h1>Fixed</h1>
+    </div>
+    <div class="relative">
+        <h1>relative</h1>
+    </div>
+    <div class="abso">
+        <h1>Absolute</h1>
+    </div>
+</body>
+</html>

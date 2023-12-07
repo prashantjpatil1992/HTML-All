@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>image</title>
+  <style>
+    .span{
+      background-color: rgb(200,0,0,0.5);
+      position: absolute;
+      left: 200px;
+      top: 350px;
+      text-align: center;
+    }
+    .span1{
+      background-color: rgb(200,0,0,0.5);
+      border: 2px solid black;
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      left: 200px;
+      top: 350px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+    <div>
+      <div>
+        <figure onmouseover="show()" onmouseout="hide()">
+          <img src="img1.jpg" height="400px" width="400px" />
+          <span class="span" id="span">
+            Image Data
+           </span>
+           <span class="span1" id="span1">
+               Wish List
+           </span>
+        </figure>
+        
+      </div>
+    </div>
+
+    <script>
+      function show(){
+        var hide = document.getElementById('span');
+        hide.style.display = 'none';
+        var show = document.getElementById('span1');
+        show.style.display = 'block';
+
+      }
+
+      function hide(){
+        var hide = document.getElementById('span');
+        hide.style.display = 'block';
+        var show = document.getElementById('span1');
+        show.style.display = 'none';
+
+      }
+    </script>
+</body>
+</html>
