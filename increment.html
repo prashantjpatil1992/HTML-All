@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decrement</title>
+</head>
+<body>
+       <button onclick="add()">+</button>
+       <h1 id="h1"></h1>
+       <button onclick="sub()"  id="del">-</button>
+
+       <script>
+        i=1
+        function add(){
+             document.getElementById('h1').innerHTML = i;
+             i++
+        }
+
+        function sub(){
+          i-=1
+          document.getElementById('h1').innerHTML = i;
+
+          if (i<=1){
+            document.getElementById('del').innerHTML = "delete";
+          }
+       
+     }
+       </script>
+</body>
+</html>
